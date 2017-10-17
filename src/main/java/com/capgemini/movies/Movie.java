@@ -1,12 +1,12 @@
 package com.capgemini.movies;
 
-public class Movies {
+public class Movie {
     private String movieName;
     private boolean movieSeen;
 
-    public Movies() {}
+    public Movie() {}
 
-    public Movies(String movieName, boolean movieSeen) {
+    public Movie(String movieName, boolean movieSeen) {
         this.movieName = movieName;
         this.movieSeen = movieSeen;
     }

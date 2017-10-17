@@ -1,5 +1,0 @@
-var table = $("#table").DataTable();
-
-
-
-
