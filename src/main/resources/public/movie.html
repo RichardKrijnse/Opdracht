@@ -4,17 +4,21 @@
 <head>
     <title>MovieList</title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/creative.css">
     <script src="vendor/popper/popper.js"></script>
 
 
 </head>
 <body>
 <nav>
-    <div class="col-md-10">
-        <div class=text-right><p class="lead"><a href="" id="addMovie" ><font color="#000000"><b>Film toevoegen</b></font></a></p></div>
-    </div>
+
 </nav>
 <header class="masthead">
+    <br>
+    <br>
+    <div class="col-md-12">
+       <div class=button><p class="lead"><a href="" id="addMovie" ><font color="#FFFFFF"><b>Film toevoegen</b></font></a></p></div>
+    </div>
     <div class="header-content">
         <div class="row">
             <table class="table table-hover" id="table">
@@ -22,9 +26,10 @@
                 <tr>
                     <th>Naam</th>
                     <th>Gezien</th>
+                </thead>
                 </tr>
             </table>
-    </div>
+        </div>
     </div>
 
 <!-- Modal -->
@@ -44,9 +49,18 @@
                         <div class="col-sm-8">
                             <input type="text" class="form-control" id="movieName" placeholder="Batman">
                         </div>
-                        <div class="modal-footer">
-                            <button type='button' id='btnAddMovie' class='btn btn-primary'>Voeg toe</button>
+                    </div>
+                    <div class="form-group row">
+                        <label for="movieSeen" class="col-sm-4 col-form-label">Movie seen:</label>
+                        <div class="col-sm-8">
+                            <select id="movieSeen">
+                                <option val="0">true</option>
+                                <option val="1">flase</option>
+                            </select>
                         </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type='button' id='btnAddMovie' class='btn btn-primary'>Voeg toe</button>
                     </div>
                 </div>
             </form>
@@ -58,9 +72,9 @@
 </header>
 
 <script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/jquery/jquery.dataTables.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
 <script src="js/movie.js"></script>
 </body>
 

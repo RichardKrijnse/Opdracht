@@ -142,11 +142,11 @@ body {
             color: #F05F40; } }
 
 header.masthead {
-  position: relative;
+  position: static;
   width: 100%;
   min-height: auto;
   text-align: center;
-  color: white;
+  color: #000000;
   background-image: url("../img/header.jpg");
   background-position: center;
   -webkit-background-size: cover;
